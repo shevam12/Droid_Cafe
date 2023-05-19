@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-
+        Log.d("print ","print ");
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
     public void showFroyoOrder(View view) {
         displayToast(getString(R.string.froyo_order_message));
     }
+
 }
